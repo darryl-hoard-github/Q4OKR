@@ -13,7 +13,7 @@ body {
   align-items: center;
 }
 
-.checkout-panel {
+.customer-information {
   display: flex;
   flex-direction: column;
   width: 940px;
