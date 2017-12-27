@@ -1,5 +1,9 @@
-  <input type="hidden" name="signup[product][handle]" value="basic" />
+<head>
+  <link rel="stylesheet" type="text/css" href="Q4OKR/page_styling.css">
+</head>
 
+<input type="hidden" name="signup[product][handle]" value="basic" />
+<div class="customer-information">
   <label for="signup[customer][first_name]">First Name</label>
   <input type="text" name="signup[customer][first_name]" />
 
@@ -33,13 +37,20 @@
   <label for="signup[customer][phone]">Phone Number</label>
   <input type="text" name="signup[customer][phone]" />
 
+</div>
+
+<div class="payment-info"
+
   <label for="signup[payment_profile][first_name]">First Name on Card</label>
   <input type="text" name="signup[payment_profile][first_name]" />
 
   <label for="signup[payment_profile][last_name]">Last Name on Card</label>
   <input type="text" name="signup[payment_profile][last_name]" />
 
-  <label for="signup[payment_profile][expiration_month]">Card Number</label>
+  <label for="signup[payment_profile][card_number]">Card Number</label>
+  <input type="text" name="signup[payment_profile][card_number]" />
+
+  <label for="signup[payment_profile][expiration_month]">Expiration Month</label>
   <select name="signup[payment_profile][expiration_month]">
     <option value="">Please Select</option>
     <option value="1">1</option>
@@ -65,6 +76,7 @@
     <option value="2021">2021</option>
     <option value="2022">2022</option>
   </select>
+
   <label for="signup[payment_profile][billing_address]">Billing Address</label>
   <input type="text" name="signup[payment_profile][billing_address]" />
 
@@ -129,11 +141,12 @@
     <option value="WY">Wyoming</option>
   </select>
 
-
-  <label for="signup[payment_profile][billing_country]">Expiration Year</label>
-  <input type="text" name="signup[payment_profile][billing_country]" value="US">United States</>
+  <label for="signup[payment_profile][billing_country]">Billing Country</label>
+  <input type="text" name="signup[payment_profile][billing_country]" value="US">
 
   <label for="signup[payment_profile][billing_zip]">Expiration Year</label>
   <input type="text" name="signup[payment_profile][billing_zip]" />
+
+</div>
 
 </form>
