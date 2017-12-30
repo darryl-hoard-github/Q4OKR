@@ -5,152 +5,159 @@
 </head>
 
 <body>
-<input type="hidden" name="signup[product][handle]" value="basic" />
-<div class="customer-information">
-  <label for="signup[customer][first_name]">First Name</label>
-  <input type="text" name="signup[customer][first_name]" />
+  var x = "testing 123"
+  <form method="post" action="https://api.chargify.com/api/v2/signups">
+    <input type="hidden" name="secure[api_id]"    value="1234" />
+    <input type="hidden" name="secure[timestamp]" value="1301148971" />
+    <input type="hidden" name="secure[nonce]"     value="5b2763d0-39e1-012e-858d-64b9e8d3946e" />
+    <input type="hidden" name="secure[data]"      value="one=uno&amp;two=dos" />
+    <input type="hidden" name="secure[signature]" value="412951d095ebbb3800dfb2126fe5073d2ab6c260" />
 
-  <label for="signup[customer][last_name]">Last Name</label>
-  <input type="text" name="signup[customer][last_name]" />
+    <input type="hidden" name="signup[product][handle]" value="basic" />
+    <div class="customer-information">
+      <label for="signup[customer][first_name]">First Name</label>
+      <input type="text" name="signup[customer][first_name]" value=x />
 
-  <label for="signup[customer][email]">E-mail</label>
-  <input type="text" name="signup[customer][email]" />
+      <label for="signup[customer][last_name]">Last Name</label>
+      <input type="text" name="signup[customer][last_name]" />
 
-  <label for="signup[customer][organization]">Company Name</label>
-  <input type="text" name="signup[customer][organization]" />
+      <label for="signup[customer][email]">E-mail</label>
+      <input type="text" name="signup[customer][email]" />
 
-  <label for="signup[customer][address]">Shipping Address</label>
-  <input type="text" name="signup[customer][address]" />
+      <label for="signup[customer][organization]">Company Name</label>
+      <input type="text" name="signup[customer][organization]" />
 
-  <label for="signup[customer][address_2]">Address 2</label>
-  <input type="text" name="signup[customer][address_2]" />
+      <label for="signup[customer][address]">Shipping Address</label>
+      <input type="text" name="signup[customer][address]" />
 
-  <label for="signup[customer][city]">Shipping City</label>
-  <input type="text" name="signup[customer][city]" />
+      <label for="signup[customer][address_2]">Address 2</label>
+      <input type="text" name="signup[customer][address_2]" />
 
-  <label for="signup[customer][state]">Shipping State</label>
-  <input type="text" name="signup[customer][state]" />
+      <label for="signup[customer][city]">Shipping City</label>
+      <input type="text" name="signup[customer][city]" />
 
-  <label for="signup[customer][zip]">Shipping Zip</label>
-  <input type="text" name="signup[customer][zip]" />
+      <label for="signup[customer][state]">Shipping State</label>
+      <input type="text" name="signup[customer][state]" />
 
-  <label for="signup[customer][Country]">Shipping Country</label>
-  <input type="text" name="signup[customer][country]" />
+      <label for="signup[customer][zip]">Shipping Zip</label>
+      <input type="text" name="signup[customer][zip]" />
 
-  <label for="signup[customer][phone]">Phone Number</label>
-  <input type="text" name="signup[customer][phone]" />
+      <label for="signup[customer][Country]">Shipping Country</label>
+      <input type="text" name="signup[customer][country]" />
 
-</div>
+      <label for="signup[customer][phone]">Phone Number</label>
+      <input type="text" name="signup[customer][phone]" />
 
-<div class="payment-info"
+    </div>
 
-  <label for="signup[payment_profile][first_name]">First Name on Card</label>
-  <input type="text" name="signup[payment_profile][first_name]" />
+    <div class="payment-info"
 
-  <label for="signup[payment_profile][last_name]">Last Name on Card</label>
-  <input type="text" name="signup[payment_profile][last_name]" />
+      <label for="signup[payment_profile][first_name]">First Name on Card</label>
+      <input type="text" name="signup[payment_profile][first_name]" />
 
-  <label for="signup[payment_profile][card_number]">Card Number</label>
-  <input type="text" name="signup[payment_profile][card_number]" />
+      <label for="signup[payment_profile][last_name]">Last Name on Card</label>
+      <input type="text" name="signup[payment_profile][last_name]" />
 
-  <label for="signup[payment_profile][expiration_month]">Expiration Month</label>
-  <select name="signup[payment_profile][expiration_month]">
-    <option value="">Please Select</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-  </select>
+      <label for="signup[payment_profile][card_number]">Card Number</label>
+      <input type="text" name="signup[payment_profile][card_number]" />
 
-  <label for="signup[payment_profile][expiration_year]">Expiration Year</label>
-  <select name="signup[payment_profile][expiration_year]" >
-    <option value="">Please Select</option>
-    <option value="2018">2018</option>
-    <option value="2019">2019</option>
-    <option value="2020">2020</option>
-    <option value="2021">2021</option>
-    <option value="2022">2022</option>
-  </select>
+      <label for="signup[payment_profile][expiration_month]">Expiration Month</label>
+      <select name="signup[payment_profile][expiration_month]">
+        <option value="">Please Select</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
 
-  <label for="signup[payment_profile][billing_address]">Billing Address</label>
-  <input type="text" name="signup[payment_profile][billing_address]" />
+      <label for="signup[payment_profile][expiration_year]">Expiration Year</label>
+      <select name="signup[payment_profile][expiration_year]" >
+        <option value="">Please Select</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+      </select>
 
-  <label for="signup[payment_profile][billing_address_2]">Billing Address 2</label>
-  <input type="text" name="signup[payment_profile][billing_address_2]" />
+      <label for="signup[payment_profile][billing_address]">Billing Address</label>
+      <input type="text" name="signup[payment_profile][billing_address]" />
 
-  <label for="signup[payment_profile][billing_city]">Billing City</label>
-  <input type="text" name="signup[payment_profile][billing_city]" />
+      <label for="signup[payment_profile][billing_address_2]">Billing Address 2</label>
+      <input type="text" name="signup[payment_profile][billing_address_2]" />
 
-  <label for="signup[payment_profile][billing_state]">Billing State</label>
-  <select name="signup[payment_profile][billing_state]">
-    <option value="AL">Alabama</option>
-    <option value="AK">Alaska</option>
-    <option value="AZ">Arizona</option>
-    <option value="AR">Arkansas</option>
-    <option value="CA">California</option>
-    <option value="CO">Colorado</option>
-    <option value="CT">Connecticut</option>
-    <option value="DE">Delaware</option>
-    <option value="DC">District Of Columbia</option>
-    <option value="FL">Florida</option>
-    <option value="GA">Georgia</option>
-    <option value="HI">Hawaii</option>
-    <option value="ID">Idaho</option>
-    <option value="IL">Illinois</option>
-    <option value="IN">Indiana</option>
-    <option value="IA">Iowa</option>
-    <option value="KS">Kansas</option>
-    <option value="KY">Kentucky</option>
-    <option value="LA">Louisiana</option>
-    <option value="ME">Maine</option>
-    <option value="MD">Maryland</option>
-    <option value="MA">Massachusetts</option>
-    <option value="MI">Michigan</option>
-    <option value="MN">Minnesota</option>
-    <option value="MS">Mississippi</option>
-    <option value="MO">Missouri</option>
-    <option value="MT">Montana</option>
-    <option value="NE">Nebraska</option>
-    <option value="NV">Nevada</option>
-    <option value="NH">New Hampshire</option>
-    <option value="NJ">New Jersey</option>
-    <option value="NM">New Mexico</option>
-    <option value="NY">New York</option>
-    <option value="NC">North Carolina</option>
-    <option value="ND">North Dakota</option>
-    <option value="OH">Ohio</option>
-    <option value="OK">Oklahoma</option>
-    <option value="OR">Oregon</option>
-    <option value="PA">Pennsylvania</option>
-    <option value="RI">Rhode Island</option>
-    <option value="SC">South Carolina</option>
-    <option value="SD">South Dakota</option>
-    <option value="TN">Tennessee</option>
-    <option value="TX">Texas</option>
-    <option value="UT">Utah</option>
-    <option value="VT">Vermont</option>
-    <option value="VA">Virginia</option>
-    <option value="WA">Washington</option>
-    <option value="WV">West Virginia</option>
-    <option value="WI">Wisconsin</option>
-    <option value="WY">Wyoming</option>
-  </select>
+      <label for="signup[payment_profile][billing_city]">Billing City</label>
+      <input type="text" name="signup[payment_profile][billing_city]" />
 
-  <label for="signup[payment_profile][billing_country]">Billing Country</label>
-  <input type="text" name="signup[payment_profile][billing_country]" value="US"/>
+      <label for="signup[payment_profile][billing_state]">Billing State</label>
+      <select name="signup[payment_profile][billing_state]">
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+        <option value="CT">Connecticut</option>
+        <option value="DE">Delaware</option>
+        <option value="DC">District Of Columbia</option>
+        <option value="FL">Florida</option>
+        <option value="GA">Georgia</option>
+        <option value="HI">Hawaii</option>
+        <option value="ID">Idaho</option>
+        <option value="IL">Illinois</option>
+        <option value="IN">Indiana</option>
+        <option value="IA">Iowa</option>
+        <option value="KS">Kansas</option>
+        <option value="KY">Kentucky</option>
+        <option value="LA">Louisiana</option>
+        <option value="ME">Maine</option>
+        <option value="MD">Maryland</option>
+        <option value="MA">Massachusetts</option>
+        <option value="MI">Michigan</option>
+        <option value="MN">Minnesota</option>
+        <option value="MS">Mississippi</option>
+        <option value="MO">Missouri</option>
+        <option value="MT">Montana</option>
+        <option value="NE">Nebraska</option>
+        <option value="NV">Nevada</option>
+        <option value="NH">New Hampshire</option>
+        <option value="NJ">New Jersey</option>
+        <option value="NM">New Mexico</option>
+        <option value="NY">New York</option>
+        <option value="NC">North Carolina</option>
+        <option value="ND">North Dakota</option>
+        <option value="OH">Ohio</option>
+        <option value="OK">Oklahoma</option>
+        <option value="OR">Oregon</option>
+        <option value="PA">Pennsylvania</option>
+        <option value="RI">Rhode Island</option>
+        <option value="SC">South Carolina</option>
+        <option value="SD">South Dakota</option>
+        <option value="TN">Tennessee</option>
+        <option value="TX">Texas</option>
+        <option value="UT">Utah</option>
+        <option value="VT">Vermont</option>
+        <option value="VA">Virginia</option>
+        <option value="WA">Washington</option>
+        <option value="WV">West Virginia</option>
+        <option value="WI">Wisconsin</option>
+        <option value="WY">Wyoming</option>
+      </select>
 
+      <label for="signup[payment_profile][billing_country]">Billing Country</label>
+      <input type="text" name="signup[payment_profile][billing_country]" value="US">
 
-  <label for="signup[payment_profile][billing_zip]">Billing Zip</label>
-  <input type="text" name="signup[payment_profile][billing_zip]" />
+      <label for="signup[payment_profile][billing_zip]">Expiration Year</label>
+      <input type="text" name="signup[payment_profile][billing_zip]" />
 
-</div>
+    </div>
+  </form>
 </body>
-</form>
