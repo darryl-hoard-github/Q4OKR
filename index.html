@@ -3,10 +3,12 @@
 </head>
 
 <body>
-  <scr
+  <script> 
+    $("secure[api_id]").value = '47029950-cf53-0135-1432-0a0577988370'
+  </script>
   
   <form method="post" action="https://api.chargify.com/api/v2/signups">
-    <input type="hidden" name="secure[api_id]" />
+    <input type="text" name="secure[api_id]" />
     <input type="hidden" name="secure[timestamp]"/>
     <input type="hidden" name="secure[nonce]" />
     <input type="hidden" name="secure[data]"/>
