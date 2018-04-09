@@ -1,17 +1,14 @@
 <head>
   <link rel="stylesheet" type="text/css" href="page_styling.css"/>
-  <script 
-          src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-  </script>
-  <script
-    $(document).ready(function(){
-		  $("#submitbutton").click(function(){
-			  alert('This works!')
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		$(".submitbutton").click(function(){
+			alert('This works!')
 		})
-	}>
-      
+	}
   </script>
-          
+
 </head>
 
 <body>
@@ -169,6 +166,6 @@
       <label for="signup[payment_profile][billing_zip]">Zip Code</label>
       <input type="text" name="signup[payment_profile][billing_zip]" />
     </div>
-    <input id="submitbutton" type="submit" value="Sign Up" />
+    <input id="submitbutton" type="submit" value="Sign Up"/>
   </form>
 </body>
