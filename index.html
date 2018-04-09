@@ -3,17 +3,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
 	$(document).ready(function(){
-		$("#submitbutton").click(function(){
-			$.ajax({
-			 	type:"POST",
-      				url:"https://github.com/work-and-play/Q4OKR/blob/master/sigcalc.py",
-      				async: true,
-      				dataType:json,
-      				success: function(data) {
-					alert(data)
-				}
-			})
+		$.ajax({
+			type:"POST",
+      			url:"https://github.com/work-and-play/Q4OKR/blob/master/sigcalc.py",
+      			async: true,
+      			dataType:json,
+      			success: function(data) {
+				alert(data)
+			}
 		})
+	
 	})
   </script>
 
