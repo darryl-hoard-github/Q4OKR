@@ -5,10 +5,9 @@
 	$(document).ready(function(){
 		$("#submitbutton").click(function(){
 			$.ajax({
-			 	type:'post',
-      				url: 'https://hooks.zapier.com/hooks/catch/3096029/f3hwax/silent/',
-      				cache:false,
-      				async:asynchronous,
+			 	type:"POST",
+      				url:"https://hooks.zapier.com/hooks/catch/3096029/f3hwax/silent/",
+      				async: true,
       				dataType:json,
       				success: function(data) {}
 			})
