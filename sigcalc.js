@@ -10,8 +10,6 @@ function sig_calc() {
   shaObj.update(api_id+timestamp+nonce+data);
   var hmac = shaObj.getHMAC("HEX");
   $('#signature').val(str(hmac));
-  $('#nonce').val(str(nonce))
-  $('#timestamp').val(str(timestamp))
-  
-};
-
+  $('#nonce').val(str(nonce));
+  $('#timestamp').val(str(timestamp)); 
+}
